@@ -1,0 +1,32 @@
+import React from "https://esm.sh/react@19.1.0"
+import ReactDOM from "https://esm.sh/react-dom@19.1.0/client"
+
+const App = () => {
+  return React.createElement(
+    "div",
+    {},
+    [
+      React.createElement(
+        "h3",{},"React-18"
+      ),
+      React.createElement(
+        "h3",{},"React-19"
+      )
+    ]
+  )
+}
+
+const App2 = () => {
+  return React.createElement(
+    "div",
+    {},
+    [
+      React.createElement("h1",{},"Variants"),
+      React.createElement(App),
+    ]
+  )
+}
+
+const container = document.getElementById("root")
+const root = ReactDOM.createRoot(container)
+root.render(React.createElement(App2))
