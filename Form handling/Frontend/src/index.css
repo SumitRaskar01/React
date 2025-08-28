@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(17, 17, 17);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-styling{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    gap: 20px;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+input{
+    height: 25px;
+}
+
+button{
+    height: 30px;
+    cursor: pointer;
+}
